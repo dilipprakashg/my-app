@@ -19,6 +19,6 @@ ENV PATH $CATALINA_HOME/bin:$PATH
 EXPOSE 8081
 
 # Start Tomcat
-CMD ["catalina.sh", "run"]
+ENTRYPOINT ["catalina.sh", "run"]
 
 
