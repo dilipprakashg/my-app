@@ -23,12 +23,7 @@ ENV PATH $CATALINA_HOME/bin:$PATH
 # Expose Tomcat port
 EXPOSE 8081
 
-# Clean up unnecessary files
-RUN apt-get purge -y openjdk-11-jdk wget && \
-    apt-get autoremove -y && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/* /opt/tomcat/webapps/*
-
 # Start Tomcat
 CMD ["catalina.sh", "run"]
+
 
