@@ -1,8 +1,7 @@
 # Use a minimal base image
 FROM ubuntu:22.04
 
-# Set the Tomcat version
-ENV TOMCAT_VERSION 10.1.19
+
 
 
 # Download and extract Tomcat
@@ -19,6 +18,6 @@ ENV PATH $CATALINA_HOME/bin:$PATH
 EXPOSE 8081
 
 # Start Tomcat
-ENTRYPOINT ["catalina.sh", "run"]
+CMD ["catalina.sh", "run"]
 
 
