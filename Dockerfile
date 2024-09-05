@@ -7,7 +7,7 @@ ENV TOMCAT_VERSION 10.1.19
 
 # Download and extract Tomcat
 RUN wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.93/bin/apache-tomcat-9.0.93.tar.gz -P /tmp
-    tar xf /tmp/apache-tomcat-9.0.93.tar.gz -C /opt 
+    tar -xvzf /tmp/apache-tomcat-9.0.93.tar.gz -C /opt 
     rm /tmp/apache-tomcat-9.0.93.tar.gz
     mv /opt/ apache-tomcat-9.0.93 /opt/tomcat
 
