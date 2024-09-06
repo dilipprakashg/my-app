@@ -5,6 +5,6 @@ RUN mkdir /usr/local/tomcat
 RUN wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.93/bin/apache-tomcat-9.0.93.tar.gz -P /tmp
 RUN cd /tmp && tar xvfz apache-tomcat-9.0.93.tar.gz
 
-EXPOSE 8081
+EXPOSE 8080
 
 CMD /usr/local/tomcat/bin/catalina.sh run
